@@ -1,0 +1,64 @@
+Servidores Azulejos
+
+http://tile.openstreetmap.org
+http://tah.openstreetmap.org/Tiles/tile
+http://andy.sandbox.cloudmade.com/tiles/cycle
+http://tile.xn--pnvkarte-m4a.de/tilegen //solo europa
+
+
+http://tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/2/256/
+http://a.tile.cloudmade.com/8bafab36916b5ce6b4395ede3cb9ddea/1/256/
+http://tile.cloudmade.com/9d87ec0668bd45baafcdb7d725795d10/1/256/
+http://openpistemap.org/tiles/contours/     no funciona
+
+
+
+all Azulejos
+http://wiki.openstreetmap.org/wiki/List_of_OSM_based_Services
+
+
+
+http://download.geofabrik.de/osm/europe/
+
+
+
+investigar bien
+http://topo.openstreetmap.de/base/
+http://topo.openstreetmap.de/topo/
+http://topo.geofabrik.de/hills/
+http://tile.openaerialmap.org/tiles/1
+http://www.openstreetbrowser.org/tiles/base
+
+
+**************************************************************
+
+Map tile urls
+[code]GOOGLEMAP:http://mt{GOOGLE_DIGIT}.google.com/vt/lyrs=m@112&hl=en&x={X}&y={Y}&z={ZOOM}&s={GALILEO}
+GOOGLESATELLITE:http://khm{GOOGLE_DIGIT}.google.com/kh/v=48&x={X}&y={Y}&z={ZOOM}&s={GALILEO}
+GOOGLEHYBRID:http://mt{GOOGLE_DIGIT}.google.com/vt/lyrs=h@112&hl=en&x={X}&y={Y}&z={ZOOM}&s={GALILEO}
+GOOGLETERREN:http://mt{GOOGLE_DIGIT}.google.com/vt/v=w2p.112&hl=en&x={X}&y={Y}&z={ZOOM}&s={GALILEO}
+GOOGLECHINA:http://mt{GOOGLE_DIGIT}.google.cn/vt/v=w2.112&hl=en&gl=cn&x={X}&y={Y}&z={ZOOM}&s={GALILEO}
+MicrosoftBrMapURL:http://imakm{MS_DIGITBR}.maplink3.com.br/maps.ashx?v={QUAD}|t&call=2.2.4
+MICROSOFTMAP:http://ecn.t{MS_DIGIT}.tiles.virtualearth.net/tiles/r{QUAD}.png?g=367&mkt=en-us
+MICROSOFTSATELLITE:http://ecn.t{MS_DIGIT}.tiles.virtualearth.net/tiles/a{QUAD}.png?g=367&mkt=en-us
+MICROSOFTHYBRID:http://ecn.t{MS_DIGIT}.tiles.virtualearth.net/tiles/h{QUAD}.png?g=367&mkt=en-us
+MICROSOFTTERREN:http://ecn.t{MS_DIGIT}.tiles.virtualearth.net/tiles/r{QUAD}.png?g=367&mkt=en-us&shading=hill
+MICROSOFTCHINA:http://r{MS_DIGIT}.tiles.ditu.live.com/tiles/r{QUAD}.png?g=367
+YAHOOMAP:http://maps{YAHOO_DIGIT}.yimg.com/hx/tl?v=4.2&.intl=en&x={X}&y={YAHOO_Y}&z={YAHOO_ZOOM}&r=1
+YAHOOINDIAHYBRID:http://maps.yimg.com/hw/tile?imgtype=png&yimgv=0.95&t=h&x={X}&y={YAHOO_Y}&z={YAHOO_ZOOM_2}
+YAHOOINDIAMAP:http://maps.yimg.com/hw/tile?locale=en&imgtype=png&yimgv=1.2&v=4.1&x={X}&y={YAHOO_Y}&z={YAHOO_ZOOM_2}
+YAHOOSATELLITE:http://maps{YAHOO_DIGIT}.yimg.com/ae/ximg?v=1.9&t=a&s=256&.intl=en&x={X}&y={YAHOO_Y}&z={YAHOO_ZOOM}&r=1
+YAHOOHYBRID:http://maps{YAHOO_DIGIT}.yimg.com/hx/tl?v=4.2&t=h&.intl=en&x={X}&y={YAHOO_Y}&z={YAHOO_ZOOM}&r=1
+OPENSATELLITETMAP:http://tile.openaerialmap.org/tiles/?v=mgm&layer=openaerialmap-900913&x={X}&y={Y}&zoom={OAM_ZOOM}
+OPENCYCLEMAP:http://andy.sandbox.cloudmade.com/tiles/cycle/{ZOOM}/{X}/{Y}.png
+OPENSTREETMAP:http://tile.openstreetmap.org/{ZOOM}/{X}/{Y}.png
+OSMAMAP:http://tah.openstreetmap.org/Tiles/tile/{ZOOM}/{X}/{Y}.png
+MAPABCCHINA:http://emap{GOOGLE_DIGIT}.mapabc.com/mapabc/maptile?v=w2.99&x={X}&y={Y}&zoom={ZOOM}
+NOKIAMAP:http://maptile.svc.nokia.com.edgesuite.net/maptiler/maptile/0.1.22.103/normal.day/{NOKIA_ZOOM}/{X}/{Y}/256/png[/code]
+
+
+
+
+
+
+http://wiki.openstreetmap.org/wiki/List_of_OSM_based_Services

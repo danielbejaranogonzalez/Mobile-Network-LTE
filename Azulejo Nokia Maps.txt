@@ -1,0 +1,8 @@
+
+        TileFactoryInfo info = new TileFactoryInfo(0,16,max, 256, true, true, "http://maptile.maps.svc.ovi.com/maptiler/maptile/newest/normal.day", "z","x","y") {
+            public String getTileUrl(int x, int y, int zoom) {
+                zoom = max-zoom;
+                String temp = this.baseURL +"/"+zoom+"/"+x+"/"+y+"/256/png8";
+                return temp;
+            }
+        };

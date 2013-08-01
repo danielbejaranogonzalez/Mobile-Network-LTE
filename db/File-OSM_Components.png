@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" dir="ltr">
+<head>
+<title>File:OSM Components.png - OpenStreetMap Wiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="MediaWiki 1.16.1" />
+<link rel="stylesheet" href="/w/extensions/UsabilityInitiative/css/combined.min.css?69" />
+<link rel="stylesheet" href="/w/extensions/UsabilityInitiative/css/vector/jquery-ui-1.7.2.css?1.7.2y" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="OpenStreetMap Wiki (en)" />
+<link title="Creative Commons" type="application/rdf+xml" href="/w/index.php?title=File:OSM_Components.png&amp;action=creativecommons" rel="meta" />
+<link rel="copyright" href="/wiki/OpenStreetMap_License" />
+<link rel="alternate" type="application/atom+xml" title="OpenStreetMap Wiki Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="/w/skins/vector/main-ltr.css?270" media="screen" />
+<link rel="stylesheet" href="/w/skins/common/shared.css?270" media="screen" />
+<link rel="stylesheet" href="/w/skins/common/commonPrint.css?270" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" media="print" />
+<link rel="stylesheet" href="/w/index.php?title=MediaWiki:Vector.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" />
+<link rel="stylesheet" href="/w/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" />
+<script>
+var skin="vector",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php",
+wgScript="/w/index.php",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://wiki.openstreetmap.org",
+wgCanonicalNamespace="File",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=6,
+wgPageName="File:OSM_Components.png",
+wgTitle="OSM Components.png",
+wgAction="view",
+wgArticleId=5144,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=464003,
+wgVersion="1.16.1",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "OpenStreetMap", "5": "OpenStreetMap talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk", "200": "DE", "201": "DE talk", "202": "FR", "203": "FR talk", "204": "ES", "205": "ES talk", "206": "IT", "207": "IT talk", "208": "NL", "209": "NL talk", "210": "RU", "211": "RU talk", "212": "JA", "213": "JA talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "openstreetmap": 4, "openstreetmap_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "de": 200, "de_talk": 201, "fr": 202, "fr_talk": 203, "es": 204, "es_talk": 205, "it": 206, "it_talk": 207, "nl": 208, "nl_talk": 209, "ru": 210, "ru_talk": 211, "ja": 212, "ja_talk": 213, "image": 6, "image_talk": 7},
+wgSiteName="OpenStreetMap Wiki",
+wgCategories=[],
+wgMWSuggestTemplate="http://wiki.openstreetmap.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest",
+wgDBname="wiki",
+wgSearchNamespaces=[0, 200, 202, 204, 206, 208, 210, 212],
+wgMWSuggestMessages=["with suggestions", "no suggestions"],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script><script src="/w/skins/common/wikibits.js?270"></script>
+<script src="/w/skins/common/jquery.min.js?270"></script>
+<script src="/w/skins/common/ajax.js?270"></script>
+<script src="/w/skins/common/mwsuggest.js?270"></script>
+<script type="text/javascript">var wgVectorPreferences = {
+	"editwarning": {
+		"enable": null
+	}
+};
+var wgVectorEnabledModules = {
+	"collapsiblenav": false,
+	"collapsibletabs": true,
+	"editwarning": true,
+	"simplesearch": true,
+	"expandablesearch": true
+};</script>
+<script src="/w/extensions/UsabilityInitiative/js/plugins.combined.min.js?270"></script>
+<script src="/w/extensions/UsabilityInitiative/Vector/Vector.combined.min.js?270"></script>
+<script type="text/javascript">mw.usability.addMessages({'vector-editwarning-warning':'Leaving this page may cause you to lose any changes you have made.\nIf you are logged in, you can disable this warning in the \"Editing\" section of your preferences.','vector-simplesearch-search':'Search','vector-simplesearch-containing':'containing...'});</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins/vector/csshover.htc")}</style><![endif]-->
+<script src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=vector&amp;270"></script>
+
+</head>
+<body class="mediawiki ltr ns-6 ns-subject page-File_OSM_Components_png skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" >
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><div style="margin-top: 2px; background-color:#E0EEE0; border-color:#666666; border-width:1px; border-style:solid;padding:1px;font-weight:bold"><a href="http://www.osmfoundation.org/wiki/License/We_Are_Changing_The_License" class="extiw" title="osmf:License/We Are Changing The License">Find out more about OpenStreetMap's upcoming license change</a> (<a href="/wiki/ODbL/We_Are_Changing_The_License" title="ODbL/We Are Changing The License">translations</a>) (<a href="/wiki/Talk:ODbL/Upcoming" title="Talk:ODbL/Upcoming">discussion</a>)</div>
+</div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">File:OSM Components.png</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<h3 id="siteSub">From OpenStreetMap Wiki</h3>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="#mw-head">navigation</a>,
+					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File links</a></li></ul><div class="fullImageLink" id="file"><a href="/w/images/1/15/OSM_Components.png"><img alt="File:OSM Components.png" src="/w/images/thumb/1/15/OSM_Components.png/800px-OSM_Components.png" width="800" height="492" /></a><br /><small>Size of this preview: 800 × 492 pixels</small><br /><a href="/w/images/1/15/OSM_Components.png">Full resolution</a>‎ (927 × 570 pixels, file size: 89 KB, MIME type: image/png)</div>
+<p>This is an OSM high level overview diagram, to appear on the <a href="/wiki/Component_overview" title="Component overview">Component overview</a> page, and as a wee image on the more prominent <a href="/wiki/Develop" title="Develop">Develop</a> page. It doesn't show all the software components involved, and it may seem inconsistent in what it <i>does</i> show, but the idea is to represent key components and their relations. I just threw it together quite quickly though, so if people want to spend some time or give some ideas for different components, better layouts, or beatification of this diagram, that's all welcome.
+</p><p><strike>I drew this in SVG format using inkscape. I literally downloaded inkscape and started learning how to use it for this diagram, hence it's pretty crude. 
+</p><p>I was expecting to be able to upload the SVG source, but the wiki doesn't allow it. I can send it to anyone who wants to edit it.
+</p><p>I did this already in fact, because <a href="/wiki/User:Florianschmitt" title="User:Florianschmitt">User:Florianschmitt</a> used it to create a german translated version of this image: <a href="/wiki/File:OSM_Komponenten.png" title="File:OSM Komponenten.png">Image:OSM Komponenten.png</a></strike>
+</p><p>As "beautification of the diagram" was welcome, so did <a href="/wiki/User:Ivansanchez" title="User:Ivansanchez">Ivansanchez</a>. Source is available as an OpenOffice Draw file. Feel free to ask for it and make any corrections or modifications to it.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wiki:pcache:idhash:5144-0!1!0!!en!2!edit=0 and timestamp 20110110185142 -->
+<h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>
+<table class="wikitable filehistory">
+<tr><td></td><th>Date/Time</th><th>Thumbnail</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="/w/images/1/15/OSM_Components.png">10:32, 27 April 2010</a></td><td><a href="/w/images/1/15/OSM_Components.png"><img alt="Thumbnail for version as of 10:32, 27 April 2010" src="/w/images/thumb/1/15/OSM_Components.png/120px-OSM_Components.png" width="120" height="74" /></a></td><td>927×570 <span style='white-space: nowrap;'>(89 KB)</span></td><td><a href="/wiki/User:Ivansanchez" title="User:Ivansanchez" class="mw-userlink">Ivansanchez</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Ivansanchez" title="User talk:Ivansanchez">Talk</a> | <a href="/wiki/Special:Contributions/Ivansanchez" title="Special:Contributions/Ivansanchez">contribs</a>)</span></span></td><td> <span class="comment">(Mapzen, TRAPI instead of XAPI)</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20100427103236%21OSM_Components.png">01:12, 3 September 2009</a></td><td><a href="/w/images/archive/1/15/20100427103236%21OSM_Components.png"><img alt="Thumbnail for version as of 01:12, 3 September 2009" src="/w/images/thumb/archive/1/15/20100427103236%21OSM_Components.png/120px-OSM_Components.png" width="120" height="74" /></a></td><td>1,154×708 <span style='white-space: nowrap;'>(110 KB)</span></td><td><a href="/wiki/User:Ivansanchez" title="User:Ivansanchez" class="mw-userlink">Ivansanchez</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Ivansanchez" title="User talk:Ivansanchez">Talk</a> | <a href="/wiki/Special:Contributions/Ivansanchez" title="Special:Contributions/Ivansanchez">contribs</a>)</span></span></td><td> <span class="comment">(XAPI outside of t@h, and minor changes)</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20090903011127%21OSM_Components.png">01:01, 3 September 2009</a></td><td><a href="/w/images/archive/1/15/20090903011127%21OSM_Components.png"><img alt="Thumbnail for version as of 01:01, 3 September 2009" src="/w/images/thumb/archive/1/15/20090903011127%21OSM_Components.png/120px-OSM_Components.png" width="120" height="73" /></a></td><td>1,160×705 <span style='white-space: nowrap;'>(106 KB)</span></td><td><a href="/wiki/User:Ivansanchez" title="User:Ivansanchez" class="mw-userlink">Ivansanchez</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Ivansanchez" title="User talk:Ivansanchez">Talk</a> | <a href="/wiki/Special:Contributions/Ivansanchez" title="Special:Contributions/Ivansanchez">contribs</a>)</span></span></td><td> <span class="comment">(Now with 20% more unclutter(tm)!!)</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20090903010124%21OSM_Components.png">00:53, 3 September 2009</a></td><td><a href="/w/images/archive/1/15/20090903010124%21OSM_Components.png"><img alt="Thumbnail for version as of 00:53, 3 September 2009" src="/w/images/thumb/archive/1/15/20090903010124%21OSM_Components.png/120px-OSM_Components.png" width="120" height="66" /></a></td><td>1,159×641 <span style='white-space: nowrap;'>(113 KB)</span></td><td><a href="/wiki/User:Ivansanchez" title="User:Ivansanchez" class="mw-userlink">Ivansanchez</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Ivansanchez" title="User talk:Ivansanchez">Talk</a> | <a href="/wiki/Special:Contributions/Ivansanchez" title="Special:Contributions/Ivansanchez">contribs</a>)</span></span></td><td> <span class="comment">(Updated with comments from IRC)</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20090903005325%21OSM_Components.png">00:29, 3 September 2009</a></td><td><a href="/w/images/archive/1/15/20090903005325%21OSM_Components.png"><img alt="Thumbnail for version as of 00:29, 3 September 2009" src="/w/images/thumb/archive/1/15/20090903005325%21OSM_Components.png/120px-OSM_Components.png" width="120" height="73" /></a></td><td>1,162×707 <span style='white-space: nowrap;'>(107 KB)</span></td><td><a href="/wiki/User:Ivansanchez" title="User:Ivansanchez" class="mw-userlink">Ivansanchez</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Ivansanchez" title="User talk:Ivansanchez">Talk</a> | <a href="/wiki/Special:Contributions/Ivansanchez" title="Special:Contributions/Ivansanchez">contribs</a>)</span></span></td><td> <span class="comment">(Moving stuff around allows grouping the little boxes.  Source is available as an OpenOffice Draw file on request (just find ivansanchez in the mailing lists and email him).)</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20090903002945%21OSM_Components.png">00:11, 3 September 2009</a></td><td><a href="/w/images/archive/1/15/20090903002945%21OSM_Components.png"><img alt="Thumbnail for version as of 00:11, 3 September 2009" src="/w/images/thumb/archive/1/15/20090903002945%21OSM_Components.png/120px-OSM_Components.png" width="120" height="75" /></a></td><td>1,185×745 <span style='white-space: nowrap;'>(86 KB)</span></td><td><a href="/wiki/User:Ivansanchez" title="User:Ivansanchez" class="mw-userlink">Ivansanchez</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Ivansanchez" title="User talk:Ivansanchez">Talk</a> | <a href="/wiki/Special:Contributions/Ivansanchez" title="Special:Contributions/Ivansanchez">contribs</a>)</span></span></td><td> <span class="comment">(Brand new architecture diagram. I was getting bored of the old one (which, by the way, looked amateur-ish))</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20090903001158%21OSM_Components.png">01:01, 8 April 2009</a></td><td><a href="/w/images/archive/1/15/20090903001158%21OSM_Components.png"><img alt="Thumbnail for version as of 01:01, 8 April 2009" src="/w/images/thumb/archive/1/15/20090903001158%21OSM_Components.png/120px-OSM_Components.png" width="120" height="89" /></a></td><td>641×473 <span style='white-space: nowrap;'>(29 KB)</span></td><td><a href="/wiki/User:Harry_Wood" title="User:Harry Wood" class="mw-userlink">Harry Wood</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Harry_Wood" title="User talk:Harry Wood">Talk</a> | <a href="/wiki/Special:Contributions/Harry_Wood" title="Special:Contributions/Harry Wood">contribs</a>)</span></span></td><td> <span class="comment">(add &#39;osmosis diffs&#39;. YWMS-&gt;WMS. t@h server)</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20090408010111%21OSM_Components.png">22:09, 11 November 2007</a></td><td><a href="/w/images/archive/1/15/20090408010111%21OSM_Components.png"><img alt="Thumbnail for version as of 22:09, 11 November 2007" src="/w/images/thumb/archive/1/15/20090408010111%21OSM_Components.png/120px-OSM_Components.png" width="120" height="86" /></a></td><td>607×434 <span style='white-space: nowrap;'>(22 KB)</span></td><td><a href="/wiki/User:Harry_Wood" title="User:Harry Wood" class="mw-userlink">Harry Wood</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Harry_Wood" title="User talk:Harry Wood">Talk</a> | <a href="/wiki/Special:Contributions/Harry_Wood" title="Special:Contributions/Harry Wood">contribs</a>)</span></span></td><td> <span class="comment">(fix to show planet.osm is actually generated from the DB direct)</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20071111220957%21OSM_Components.png">11:14, 15 June 2007</a></td><td><a href="/w/images/archive/1/15/20071111220957%21OSM_Components.png"><img alt="Thumbnail for version as of 11:14, 15 June 2007" src="/w/images/thumb/archive/1/15/20071111220957%21OSM_Components.png/120px-OSM_Components.png" width="120" height="92" /></a></td><td>639×488 <span style='white-space: nowrap;'>(71 KB)</span></td><td><a href="/wiki/User:Harry_Wood" title="User:Harry Wood" class="mw-userlink">Harry Wood</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Harry_Wood" title="User talk:Harry Wood">Talk</a> | <a href="/wiki/Special:Contributions/Harry_Wood" title="Special:Contributions/Harry Wood">contribs</a>)</span></span></td><td> <span class="comment">(didn&#39;t work. let try that again.)</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20070615111402%21OSM_Components.png">11:10, 15 June 2007</a></td><td><a href="/w/images/archive/1/15/20070615111402%21OSM_Components.png"><img alt="Thumbnail for version as of 11:10, 15 June 2007" src="/w/images/thumb/archive/1/15/20070615111402%21OSM_Components.png/120px-OSM_Components.png" width="120" height="92" /></a></td><td>639×488 <span style='white-space: nowrap;'>(71 KB)</span></td><td><a href="/wiki/User:Harry_Wood" title="User:Harry Wood" class="mw-userlink">Harry Wood</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Harry_Wood" title="User talk:Harry Wood">Talk</a> | <a href="/wiki/Special:Contributions/Harry_Wood" title="Special:Contributions/Harry Wood">contribs</a>)</span></span></td><td> <span class="comment">(updated to show <a href="/wiki/Planet.osm" title="Planet.osm">Planet.osm</a> and tile serving details + <a href="/wiki/Potlatch" title="Potlatch">Potlatch</a>)</span></td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/w/images/archive/1/15/20070615111004%21OSM_Components.png">01:47, 23 February 2007</a></td><td><a href="/w/images/archive/1/15/20070615111004%21OSM_Components.png"><img alt="Thumbnail for version as of 01:47, 23 February 2007" src="/w/images/thumb/archive/1/15/20070615111004%21OSM_Components.png/120px-OSM_Components.png" width="120" height="91" /></a></td><td>682×518 <span style='white-space: nowrap;'>(45 KB)</span></td><td><a href="/wiki/User:Harry_Wood" title="User:Harry Wood" class="mw-userlink">Harry Wood</a> <span style='white-space: nowrap;'> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Harry_Wood" title="User talk:Harry Wood">Talk</a> | <a href="/wiki/Special:Contributions/Harry_Wood" title="Special:Contributions/Harry Wood">contribs</a>)</span></span></td><td> <span class="comment">(My first stab at a OSM high level overview diagram)</span></td></tr>
+</table>
+
+</div>
+<br /><ul>
+<li id="mw-imagepage-edit-external"><a href="/w/index.php?title=File:OSM_Components.png&amp;action=edit&amp;externaledit=true&amp;mode=file" title="File:OSM Components.png">Edit this file using an external application</a> <small>(See the <a href="http://www.mediawiki.org/wiki/Manual:External_editors" class="external text" rel="nofollow">setup instructions</a> for more information)</small></li>
+</ul>
+<h2 id="filelinks">File links</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 20 pages link to this file:
+</p><ul class='mw-imagepage-linkstoimage'>
+<li><a href="/wiki/Develop" title="Develop">Develop</a></li>
+<li><a href="/wiki/Component_overview" title="Component overview">Component overview</a></li>
+<li><a href="/wiki/PrimerosPasos" title="PrimerosPasos">PrimerosPasos</a></li>
+<li><a href="/wiki/He:Develop" title="He:Develop">He:Develop</a></li>
+<li><a href="/wiki/He:Component_overview" title="He:Component overview">He:Component overview</a></li>
+<li><a href="/wiki/Fy:Develop" title="Fy:Develop">Fy:Develop</a></li>
+<li><a href="/wiki/IT:Develop_Principale" title="IT:Develop Principale">IT:Develop Principale</a></li>
+<li><a href="/wiki/IT:Component_overview" title="IT:Component overview">IT:Component overview</a></li>
+<li><a href="/wiki/Bg:Develop" title="Bg:Develop">Bg:Develop</a></li>
+<li><a href="/wiki/Bg:Component_overview" title="Bg:Component overview">Bg:Component overview</a></li>
+<li><a href="/wiki/RU:%D0%9E%D0%B1%D0%B7%D0%BE%D1%80_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_OSM" title="RU:Обзор компонентов OSM">RU:Обзор компонентов OSM</a></li>
+<li><a href="/wiki/FR:Component_overview" title="FR:Component overview">FR:Component overview</a></li>
+<li><a href="/wiki/NL:Develop" title="NL:Develop">NL:Develop</a></li>
+<li><a href="/wiki/FR:Develop" title="FR:Develop">FR:Develop</a></li>
+<li><a href="/wiki/Fi:Yleiskuvaus" title="Fi:Yleiskuvaus">Fi:Yleiskuvaus</a></li>
+<li><a href="/wiki/ES:Develop" title="ES:Develop">ES:Develop</a></li>
+<li><a href="/wiki/ES:Component_overview" title="ES:Component overview">ES:Component overview</a></li>
+<li><a href="/wiki/JA:Develop" title="JA:Develop">JA:Develop</a></li>
+<li><a href="/wiki/JA:Component_overview" title="JA:Component overview">JA:Component overview</a></li>
+<li><a href="/wiki/User:Stanton/Mapnik_Test_Server" title="User:Stanton/Mapnik Test Server">User:Stanton/Mapnik Test Server</a></li>
+</ul>
+</div>
+<div class="printfooter">
+Retrieved from "<a href="http://wiki.openstreetmap.org/wiki/File:OSM_Components.png">http://wiki.openstreetmap.org/wiki/File:OSM_Components.png</a>"</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks catlinks-allhidden'></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=File:OSM_Components.png" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-image" class="selected"><a href="/wiki/File:OSM_Components.png"  title="View the file page [c]" accesskey="c"><span>File</span></a></li>
+					<li  id="ca-talk" class="new"><a href="/w/index.php?title=File_talk:OSM_Components.png&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+	<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><a href="/wiki/File:OSM_Components.png" ><span>Read</span></a></li>
+					<li id="ca-viewsource"><a href="/w/index.php?title=File:OSM_Components.png&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li>
+					<li id="ca-history" class="collapsible "><a href="/w/index.php?title=File:OSM_Components.png&amp;action=history"  title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+			<input id="searchInput" name="search" type="text"  title="Search OpenStreetMap Wiki [f]" accesskey="f"  value="" />
+			<button id="searchButton" type='submit' name='button'  title="Search the pages for this text">&nbsp;</button>
+		</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- recentchanges -->
+<div class="portal" id='p-recentchanges'>
+	<h5>Recent changes</h5>
+	<div class="body">
+				<ul>
+					<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /recentchanges -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li>
+					<li id="n-The-map"><a href="http://www.openstreetmap.org/">The map</a></li>
+					<li id="n-portal"><a href="/wiki/Mapping_projects" title="About the project, what you can do, where to find things">Mapping projects</a></li>
+					<li id="n-Map-Features"><a href="/wiki/Map_Features">Map Features</a></li>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="The place to find out">Help</a></li>
+					<li id="n-Blog"><a href="/wiki/OSM_Blogs">Blog</a></li>
+					<li id="n-Shop"><a href="/wiki/Merchandise">Shop</a></li>
+					<li id="n-Donations"><a href="/wiki/Donations">Donations</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/File:OSM_Components.png" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/File:OSM_Components.png" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+																																										<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+									<li id="t-print"><a href="/w/index.php?title=File:OSM_Components.png&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+						<li id="t-permalink"><a href="/w/index.php?title=File:OSM_Components.png&amp;oldid=464003" title="Permanent link to this revision of the page">Permanent link</a></li>
+						</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> This page was last modified on 27 April 2010, at 10:32.</li>
+																							<li id="footer-info-copyright">Content is available under <a href="/wiki/OpenStreetMap_License" title="OpenStreetMap License">Creative Commons Attribution-ShareAlike 2.0 license</a>.</li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="/wiki/Privacy_Policy" title="Privacy Policy">Privacy policy</a></li>
+																							<li id="footer-places-about"><a href="/wiki/About" title="About">About OpenStreetMap Wiki</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/OpenStreetMap:General_disclaimer" title="OpenStreetMap:General disclaimer">Disclaimers</a></li>
+															</ul>
+										<ul id="footer-icons" class="noprint">
+								<li id="footer-icon-poweredby"><a href="http://www.mediawiki.org/"><img src="/w/skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki" /></a></li>
+												<li id="footer-icon-copyright"><a href="http://creativecommons.org/licenses/by-sa/2.0/"><img src="/cc-wiki.png" alt="Creative Commons Attribution-ShareAlike 2.0 license" width="88" height="31" /></a></li>
+							</ul>
+			<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+		<!-- Served in 0.496 secs. -->			</body>
+</html>

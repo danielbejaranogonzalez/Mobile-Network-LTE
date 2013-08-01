@@ -1,0 +1,499 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*
+ * VentanaNuevoSitio.java
+ *
+ * Created on 27/07/2011, 08:30:02 PM
+ */
+package Vista.ventanas.Simulacion;
+
+import Vista.ventanas.Sitio.*;
+import Controlador.ControladorGeneral;
+import Libreria.CentrarScreen;
+import Modelo.PRO.Proyecto;
+import Modelo.PRO.Sitio;
+import Modelo.SIM.Outdoor.Paths.PathModelo_ITU_R_M2135;
+import Modelo.SIM.Outdoor.SimuladorPropagacion;
+import java.text.DecimalFormat;
+import java.text.ParseException;
+import java.util.LinkedList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.ComboBoxModel;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
+/**
+ *
+ * @author Usuario
+ */
+public class VentanaConfiguracionSimulacion extends javax.swing.JDialog {
+
+    private ControladorGeneral controlador;
+    
+    /** Creates new form VentanaNuevoSitio */
+    public VentanaConfiguracionSimulacion(java.awt.Frame parent, boolean modal, ControladorGeneral controlador) {
+        super(parent, modal);
+        this.controlador = controlador;
+        initComponents();
+        
+        String[] listaOutdoorLinks = null; 
+        LinkedList<Proyecto> proyectos = controlador.getLibroDeProyectos().getProyectos();
+        String proyectoPredeterminadoActual = controlador.getLibroDeProyectos().getProyectoPredeterminado();
+        for(int i=0; i < proyectos.size(); i++){
+            //Si el proyecto es predeterminado
+             if(proyectos.get(i).getNombre().equals(proyectoPredeterminadoActual)){
+                 listaOutdoorLinks = new String[proyectos.get(i).getGrupoOutdoorLinks().size()];
+                 for(int j=0; j < proyectos.get(i).getGrupoOutdoorLinks().size(); j++){
+                     listaOutdoorLinks[j] = proyectos.get(i).getGrupoOutdoorLinks().get(j).getNombreEnlaceOutdoor();
+                 }
+                 
+             }
+        }
+        
+        try{
+            enlaceOudoorPredeterminado.setModel(new DefaultComboBoxModel(listaOutdoorLinks));
+            modeloPropagacion.setModel(new DefaultComboBoxModel(SimuladorPropagacion.MODELOS_PROPAGACION));
+            
+            for(int i=0; i < proyectos.size(); i++){
+            //Si el proyecto es predeterminado
+                 if(proyectos.get(i).getNombre().equals(proyectoPredeterminadoActual)){
+                     modeloPropagacion.setSelectedItem(proyectos.get(i).getSimuladorPropagacion().getModeloPropagacion());
+                     enlaceOudoorPredeterminado.setSelectedItem(proyectos.get(i).getSimuladorPropagacion().getOutdoorLinkPredeterminado().getNombreEnlaceOutdoor());
+                 }
+            }
+            controlador.getControladorBotones().actualizarPathsConexionOutdoorPredeterminada();
+        }catch(NullPointerException NPE){
+            JOptionPane.showMessageDialog(null, "'No hay un enlace Outdoor predeterminado'","Error 001: NullPointerException",JOptionPane.ERROR_MESSAGE);
+        }
+        
+    }
+    
+    public void actualizarTablaPaths(LinkedList <PathModelo_ITU_R_M2135> paths) {
+        
+        Object[][] parametros = new Object[paths.size()][7];
+        
+        String[] columnas = new String [] {
+                "Numero de Path", "Tipo de Path", "Tipo de Escenario", "Altura de Edificios", "Anchura Calles", "Temperatura Ambiente", "Probabilidad de Shadowing"
+            };
+        
+        for(int j = 0; j < paths.size(); j++){
+            
+            parametros[j][0] = paths.get(j).getNumeroPath();            parametros[j][1] = paths.get(j).getTipoPath();
+            parametros[j][2] = paths.get(j).getTipoEscenario();         parametros[j][3] = paths.get(j).getAlturaPromedioEdificios();
+            parametros[j][4] = paths.get(j).getAnchuraPromedioCalles(); parametros[j][5] = paths.get(j).getTemperaturaAmbiente();
+            parametros[j][6] = paths.get(j).getMinimaProbabilidadShadowing();
+        }
+        DefaultTableModel modelo = new DefaultTableModel(parametros, columnas);
+        tablaPaths.setModel(modelo);
+        
+        tablaPaths.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tablaPaths.getColumnModel().getColumn(1).setPreferredWidth(80);
+        tablaPaths.getColumnModel().getColumn(2).setPreferredWidth(100);
+        tablaPaths.getColumnModel().getColumn(3).setPreferredWidth(100);
+        tablaPaths.getColumnModel().getColumn(4).setPreferredWidth(90);
+        tablaPaths.getColumnModel().getColumn(5).setPreferredWidth(130);
+        tablaPaths.getColumnModel().getColumn(6).setPreferredWidth(150);
+        tablaPaths.setEnabled(true);
+    }
+    
+
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        buttonGroup = new javax.swing.ButtonGroup();
+        jPanel3 = new javax.swing.JPanel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        botonAceptar = new javax.swing.JButton();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        modeloPropagacion = new javax.swing.JComboBox();
+        jLabel3 = new javax.swing.JLabel();
+        enlaceOudoorPredeterminado = new javax.swing.JComboBox();
+        jPanel5 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tablaPaths = new javax.swing.JTable();
+        jToolBar1 = new javax.swing.JToolBar();
+        nuevoPath = new javax.swing.JButton();
+        eliminarPath = new javax.swing.JButton();
+        editarPath = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Configuracion de Simulacion");
+        setIconImage(new ImageIcon("src/Images/iconos16x16/analizer.png").getImage());
+        setResizable(false);
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setName("jPanel3"); // NOI18N
+
+        jSeparator2.setName("jSeparator2"); // NOI18N
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/iconos32x32/control_panel.png"))); // NOI18N
+        jLabel1.setName("jLabel1"); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11));
+        jLabel2.setText("Asistente para la Configuracion de Simulacion");
+        jLabel2.setName("jLabel2"); // NOI18N
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 540, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addContainerGap(231, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)))
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jPanel4.setName("jPanel4"); // NOI18N
+
+        botonAceptar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/iconos16x16/tick.png"))); // NOI18N
+        botonAceptar.setText("Cerrar");
+        botonAceptar.setName("botonAceptar"); // NOI18N
+        botonAceptar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonAceptarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(433, Short.MAX_VALUE)
+                .addComponent(botonAceptar))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(botonAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jTabbedPane1.setName("jTabbedPane1"); // NOI18N
+
+        jPanel1.setName("jPanel1"); // NOI18N
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Configuracion General"));
+        jPanel2.setName("jPanel2"); // NOI18N
+
+        jLabel5.setText("Modelo de Propagacion:");
+        jLabel5.setName("jLabel5"); // NOI18N
+
+        modeloPropagacion.setName("modeloPropagacion"); // NOI18N
+        modeloPropagacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modeloPropagacionActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Enlace Outdoor Predeterminado:");
+        jLabel3.setName("jLabel3"); // NOI18N
+
+        enlaceOudoorPredeterminado.setName("enlaceOudoorPredeterminado"); // NOI18N
+        enlaceOudoorPredeterminado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enlaceOudoorPredeterminadoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(modeloPropagacion, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(enlaceOudoorPredeterminado, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap(106, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(modeloPropagacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(enlaceOudoorPredeterminado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(4, Short.MAX_VALUE))
+        );
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Panel de Gestion de Paths de Simulacion"));
+        jPanel5.setName("jPanel5"); // NOI18N
+        jPanel5.setLayout(null);
+
+        jScrollPane1.setName("jScrollPane1"); // NOI18N
+
+        tablaPaths.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Numero de Path", "Tipo de Path", "Tipo de Escenario", "Altura de Edificios", "Anchura Calles", "Temperatura Ambiente", "Probabilidad de Shadowing"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class, java.lang.Double.class, java.lang.Float.class, java.lang.Double.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        tablaPaths.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
+        tablaPaths.setColumnSelectionAllowed(true);
+        tablaPaths.setName("tablaPaths"); // NOI18N
+        tablaPaths.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(tablaPaths);
+        tablaPaths.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        tablaPaths.getColumnModel().getColumn(0).setPreferredWidth(100);
+        tablaPaths.getColumnModel().getColumn(1).setPreferredWidth(80);
+        tablaPaths.getColumnModel().getColumn(2).setPreferredWidth(100);
+        tablaPaths.getColumnModel().getColumn(3).setPreferredWidth(100);
+        tablaPaths.getColumnModel().getColumn(4).setPreferredWidth(90);
+        tablaPaths.getColumnModel().getColumn(5).setPreferredWidth(130);
+        tablaPaths.getColumnModel().getColumn(6).setPreferredWidth(150);
+
+        jPanel5.add(jScrollPane1);
+        jScrollPane1.setBounds(7, 60, 480, 90);
+
+        jToolBar1.setRollover(true);
+        jToolBar1.setName("jToolBar1"); // NOI18N
+
+        nuevoPath.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/iconos32x32/chart_line_add.png"))); // NOI18N
+        nuevoPath.setToolTipText("Crear Nuevo Path");
+        nuevoPath.setName("nuevoPath"); // NOI18N
+        nuevoPath.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nuevoPathActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(nuevoPath);
+
+        eliminarPath.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/iconos32x32/chart_line_delete.png"))); // NOI18N
+        eliminarPath.setToolTipText("Eliminar Path");
+        eliminarPath.setEnabled(false);
+        eliminarPath.setName("eliminarPath"); // NOI18N
+        jToolBar1.add(eliminarPath);
+
+        editarPath.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/iconos32x32/chart_line_edit.png"))); // NOI18N
+        editarPath.setToolTipText("Editar Path");
+        editarPath.setEnabled(false);
+        editarPath.setName("editarPath"); // NOI18N
+        jToolBar1.add(editarPath);
+
+        jPanel5.add(jToolBar1);
+        jToolBar1.setBounds(6, 16, 480, 38);
+
+        jSeparator1.setName("jSeparator1"); // NOI18N
+        jPanel5.add(jSeparator1);
+        jSeparator1.setBounds(5, 54, 577, 5);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 495, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jTabbedPane1.addTab("Propagacion", new javax.swing.ImageIcon(getClass().getResource("/Images/iconos16x16/action_log.png")), jPanel1); // NOI18N
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTabbedPane1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void botonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAceptarActionPerformed
+
+    LinkedList<Proyecto> proyectos = controlador.getLibroDeProyectos().getProyectos();
+    String proyectoPredeterminadoActual = controlador.getLibroDeProyectos().getProyectoPredeterminado();
+    
+        for(int i=0; i < proyectos.size(); i++){
+            //si el proyecto es predeterminado
+            if(proyectos.get(i).getNombre().equals(proyectoPredeterminadoActual)){
+                for(int j=0; j < proyectos.get(i).getGrupoOutdoorLinks().size();j++){
+                    if(proyectos.get(i).getGrupoOutdoorLinks().get(j).getNombreEnlaceOutdoor().equals(enlaceOudoorPredeterminado.getSelectedItem().toString()))
+                        if(!enlaceOudoorPredeterminado.getSelectedItem().toString().equals("")){
+                                proyectos.get(i).getSimuladorPropagacion().setOutdoorLinkPredeterminado(proyectos.get(i).getGrupoOutdoorLinks().get(j));
+                                System.out.println("Cambio de OutdoorLink: ");
+                        }
+                    }
+                }
+            }
+        
+        for(int i=0; i < proyectos.size(); i++){
+                //si el proyecto es predeterminado
+                if(proyectos.get(i).getNombre().equals(proyectoPredeterminadoActual)){
+                    proyectos.get(i).getSimuladorPropagacion().setModeloPropagacion(modeloPropagacion.getSelectedItem().toString());
+                }
+        }
+        this.dispose();
+        
+    }//GEN-LAST:event_botonAceptarActionPerformed
+
+    private void establecerOutdoorLinkPredeterminado(){
+         LinkedList<Proyecto> proyectos = controlador.getLibroDeProyectos().getProyectos();
+         String proyectoPredeterminadoActual = controlador.getLibroDeProyectos().getProyectoPredeterminado();
+    
+        for(int i=0; i < proyectos.size(); i++){
+            //si el proyecto es predeterminado
+            if(proyectos.get(i).getNombre().equals(proyectoPredeterminadoActual)){
+                for(int j=0; j < proyectos.get(i).getGrupoOutdoorLinks().size();j++){
+                    if(proyectos.get(i).getGrupoOutdoorLinks().get(j).getNombreEnlaceOutdoor().equals(enlaceOudoorPredeterminado.getSelectedItem().toString()))
+                        if(!enlaceOudoorPredeterminado.getSelectedItem().toString().equals("")){
+                                proyectos.get(i).getSimuladorPropagacion().setOutdoorLinkPredeterminado(proyectos.get(i).getGrupoOutdoorLinks().get(j));
+                        }
+                    }
+                }
+            }
+        controlador.getControladorBotones().actualizarPathsConexionOutdoorPredeterminada();
+    }
+    
+private void enlaceOudoorPredeterminadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enlaceOudoorPredeterminadoActionPerformed
+// TODO add your handling code here:
+   establecerOutdoorLinkPredeterminado();
+   controlador.getControladorBotones().actualizarPathsConexionOutdoorPredeterminada();
+}//GEN-LAST:event_enlaceOudoorPredeterminadoActionPerformed
+
+private void nuevoPathActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nuevoPathActionPerformed
+// TODO add your handling code here:
+    establecerOutdoorLinkPredeterminado();
+    
+    try{
+        if(modeloPropagacion.getSelectedItem().toString().equals("MODELO REC. ITU-R M.2135")){
+                controlador.getControladorVentanas().crearVentanaNuevoPath();
+            }
+    }catch(NullPointerException NPE){
+            JOptionPane.showMessageDialog(null, "'No hay un enlace Outdoor predeterminado'","Error 001: NullPointerException",JOptionPane.ERROR_MESSAGE);
+    } 
+}//GEN-LAST:event_nuevoPathActionPerformed
+
+private void modeloPropagacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modeloPropagacionActionPerformed
+// TODO add your handling code here:
+    LinkedList<Proyecto> proyectos = controlador.getLibroDeProyectos().getProyectos();
+    String proyectoPredeterminadoActual = controlador.getLibroDeProyectos().getProyectoPredeterminado();
+    for(int i=0; i < proyectos.size(); i++){
+            //si el proyecto es predeterminado
+            if(proyectos.get(i).getNombre().equals(proyectoPredeterminadoActual)){
+                proyectos.get(i).getSimuladorPropagacion().setModeloPropagacion(modeloPropagacion.getSelectedItem().toString());
+            }
+    }
+}//GEN-LAST:event_modeloPropagacionActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botonAceptar;
+    private javax.swing.ButtonGroup buttonGroup;
+    private javax.swing.JButton editarPath;
+    private javax.swing.JButton eliminarPath;
+    private javax.swing.JComboBox enlaceOudoorPredeterminado;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JToolBar jToolBar1;
+    private javax.swing.JComboBox modeloPropagacion;
+    private javax.swing.JButton nuevoPath;
+    private javax.swing.JTable tablaPaths;
+    // End of variables declaration//GEN-END:variables
+}
